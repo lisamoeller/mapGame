@@ -1,0 +1,22 @@
+{
+  "name": "map-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "sass style.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisamoeller/map-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisamoeller/map-game/issues"
+  },
+  "homepage": "https://github.com/lisamoeller/map-game#readme",
+  "dependencies": {
+    "sass": "^1.25.0"
+  }
+}

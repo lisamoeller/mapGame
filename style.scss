@@ -1,0 +1,149 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgba(209, 56, 47, 0.9);
+
+  font-family: "Roboto";
+}
+
+.winner {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(150, 203, 100, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+
+  div {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: purple;
+  }
+
+  .button {
+    border: 5px solid purple;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin: 3rem 0 0;
+
+    &:hover {
+      border-color: darkblue;
+      color: darkblue;
+      background: purple;
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  h1 {
+    color: darkblue;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1rem;
+  }
+
+  .scoreGuessWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 2rem;
+
+    .toFind,
+    #score {
+      text-align: center;
+      border-bottom: 4px solid teal;
+      margin: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: teal;
+      width: 100%;
+    }
+
+    .toFind {
+      max-width: 500px;
+    }
+
+    #score {
+      border: 4px solid teal;
+      max-width: 130px;
+    }
+  }
+}
+
+#us-map {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+path {
+  fill: #d3d3d3;
+
+  &:not(.teal):not(.red):hover {
+    fill: #a3a3a3 !important;
+    cursor: pointer;
+  }
+
+  &.teal {
+    fill: teal;
+
+    &:hover {
+      fill: darkblue;
+    }
+  }
+
+  &.red {
+    fill: red;
+
+    &:hover {
+      fill: darkorange;
+    }
+  }
+}
+
+#path67 {
+  fill: none !important;
+  stroke: #a9a9a9 !important;
+  cursor: default;
+}
+
+.blink {
+  animation: blink 0.5s infinite linear;
+}
+
+.teal {
+  fill: teal;
+
+  &:hover {
+    fill: darkblue;
+  }
+}
+
+@keyframes blink {
+  0% {
+    fill: red;
+  }
+  50% {
+    fill: #d3d3d3;
+  }
+}
