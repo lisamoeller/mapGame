@@ -2,9 +2,9 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: rgba(209, 56, 47, 0.9);
+  background: #d1382f;
 
-  font-family: "Roboto";
+  font-family: "Roboto",  Arial, sans-serif;
 }
 
 .winner {
@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100vh;
   background: rgba(150, 203, 100, 0.8);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -90,55 +90,55 @@ body {
       max-width: 130px;
     }
   }
-}
 
-#us-map {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-path {
-  fill: #d3d3d3;
-
-  &:not(.teal):not(.red):hover {
-    fill: #a3a3a3 !important;
-    cursor: pointer;
+  #us-map {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
 
-  &.teal {
+  path {
+    fill: #d3d3d3;
+  
+    &:not(.teal):not(.red):hover {
+      fill: #a3a3a3 !important;
+      cursor: pointer;
+    }
+  
+    &.teal {
+      fill: teal;
+  
+      &:hover {
+        fill: darkblue;
+      }
+    }
+  
+    &.red {
+      fill: red;
+  
+      &:hover {
+        fill: darkorange;
+      }
+    }
+  }
+  
+  #path67 {
+    fill: none !important;
+    stroke: #a9a9a9 !important;
+    cursor: default;
+  }
+  
+  .blink {
+    animation: blink 0.5s infinite linear;
+  }
+  
+  .teal {
     fill: teal;
-
+  
     &:hover {
       fill: darkblue;
     }
-  }
-
-  &.red {
-    fill: red;
-
-    &:hover {
-      fill: darkorange;
-    }
-  }
-}
-
-#path67 {
-  fill: none !important;
-  stroke: #a9a9a9 !important;
-  cursor: default;
-}
-
-.blink {
-  animation: blink 0.5s infinite linear;
-}
-
-.teal {
-  fill: teal;
-
-  &:hover {
-    fill: darkblue;
   }
 }
 

@@ -2,8 +2,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: rgba(209, 56, 47, 0.9);
-  font-family: "Roboto";
+  background: #d1382f;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .winner {
@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100vh;
   background: rgba(150, 203, 100, 0.8);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -82,48 +82,43 @@ body {
   border: 4px solid teal;
   max-width: 130px;
 }
-
-#us-map {
+.wrapper #us-map {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
 }
-
-path {
+.wrapper path {
   fill: #d3d3d3;
 }
-path:not(.teal):not(.red):hover {
+.wrapper path:not(.teal):not(.red):hover {
   fill: #a3a3a3 !important;
   cursor: pointer;
 }
-path.teal {
+.wrapper path.teal {
   fill: teal;
 }
-path.teal:hover {
+.wrapper path.teal:hover {
   fill: darkblue;
 }
-path.red {
+.wrapper path.red {
   fill: red;
 }
-path.red:hover {
+.wrapper path.red:hover {
   fill: darkorange;
 }
-
-#path67 {
+.wrapper #path67 {
   fill: none !important;
   stroke: #a9a9a9 !important;
   cursor: default;
 }
-
-.blink {
+.wrapper .blink {
   animation: blink 0.5s infinite linear;
 }
-
-.teal {
+.wrapper .teal {
   fill: teal;
 }
-.teal:hover {
+.wrapper .teal:hover {
   fill: darkblue;
 }
 

@@ -1,4 +1,4 @@
-const paths = document.querySelectorAll("path:not(#path67)");
+const paths = document.querySelectorAll(".wrapper path:not(#path67)");
 const showBox = document.querySelector(".toFind");
 let stateList = {
      "HI": {"name": "Hawaii", "capital":"Honolulu"},
@@ -62,7 +62,6 @@ function reset(){
   document.querySelector("#score span").innerHTML = score;
   countStates = 0;
   
-  
   paths.forEach(path => path.classList = []);
   
   Object.keys(stateList).forEach(key => {
@@ -70,7 +69,6 @@ function reset(){
   });
   
   document.querySelector(".winner").style.display = "none";
-  
   newGame();
 }
 
