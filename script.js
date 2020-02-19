@@ -53,7 +53,7 @@ let stateList = {
      "VA": {"name": "Virginia", "capital":"Richmond"},
 };
 let score = 0;
-let countStates = 0;
+let countStates = 48;
 
 let wrongGuess = 0;
 
@@ -73,6 +73,7 @@ function reset(){
 }
 
 function endGame(){
+  document.querySelector(".winnerScore").innerHTML = score;
   document.querySelector(".winner").style.display = "flex";
 }
 

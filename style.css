@@ -18,6 +18,9 @@ body {
   z-index: 100;
   text-align: center;
 }
+.winner .winnerScore {
+  font-size: 2.5rem;
+}
 .winner div {
   font-size: 4rem;
   font-weight: bold;
