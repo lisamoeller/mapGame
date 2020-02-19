@@ -44,9 +44,10 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   box-sizing: border-box;
   justify-content: center;
+  position: relative;
+  padding: 2rem 0;
 }
 .wrapper h1 {
   color: darkblue;
@@ -82,11 +83,9 @@ body {
   border: 4px solid teal;
   max-width: 130px;
 }
-.wrapper #us-map {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
+.wrapper svg {
+  margin: 0 2rem;
+  width: calc(100% - 4rem);
 }
 .wrapper path {
   fill: #d3d3d3;
@@ -120,6 +119,19 @@ body {
 }
 .wrapper .teal:hover {
   fill: darkblue;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  color: #6d6d6d;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+#footer a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1rem;
 }
 
 @keyframes blink {
