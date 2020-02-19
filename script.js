@@ -1,4 +1,4 @@
-const paths = document.querySelectorAll("path");
+const paths = document.querySelectorAll("path:not(#path67)");
 const showBox = document.querySelector(".toFind");
 let stateList = {
      "HI": {"name": "Hawaii", "capital":"Honolulu"},
